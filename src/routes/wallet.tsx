@@ -22,10 +22,10 @@ import { UnicoinAmount } from "@/components/unicoin";
 import { cn } from "@/lib/utils";
 
 const PACKS = [
-  { coins: 100, usd: 1 },
-  { coins: 500, usd: 4.5 },
-  { coins: 1000, usd: 8 },
-  { coins: 2500, usd: 18 },
+  { coins: 100, rs: 100 },
+  { coins: 500, rs: 500 },
+  { coins: 1000, rs: 1000 },
+  { coins: 2500, rs: 2500 },
 ];
 
 export const Route = createFileRoute("/wallet")({
@@ -113,7 +113,7 @@ function WalletPage() {
                 >
                   <div>
                     <UnicoinAmount amount={p.coins} size="lg" />
-                    <div className="mt-1 text-xs text-muted-foreground">${p.usd.toFixed(2)} USD</div>
+                    <div className="mt-1 text-xs text-muted-foreground">₹{p.rs.toFixed(2)} </div>
                   </div>
                   <ArrowDownToLine className="h-5 w-5 text-muted-foreground transition group-hover:text-primary" />
                 </button>

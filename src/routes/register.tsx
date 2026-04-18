@@ -196,14 +196,14 @@ function RegisterPage() {
           <div className="absolute right-10 top-20 h-72 w-72 rounded-full bg-primary-glow blur-3xl" />
           <div className="absolute bottom-10 left-10 h-80 w-80 rounded-full bg-primary blur-3xl" />
         </div>
-        <div className="relative flex h-full flex-col justify-center p-12 text-primary-foreground">
+        <div className="relative flex h-full flex-col justify-center p-12 text-foreground">
           <h1 className="text-5xl font-bold leading-tight tracking-tight">
             Join your campus marketplace.
           </h1>
-          <p className="mt-4 max-w-md text-lg text-primary-foreground/80">
+          <p className="mt-4 max-w-md text-lg text-foreground/80">
             Auctions powered by Unicoins. Sell what you don't need. Snag what you do.
           </p>
-          <ul className="mt-8 space-y-3 text-primary-foreground/90">
+          <ul className="mt-8 space-y-3 text-foreground/90">
             {[
               "500 Unicoins on signup",
               "Verified university emails only",

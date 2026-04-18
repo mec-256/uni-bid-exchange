@@ -65,7 +65,7 @@ function HomePage() {
   return (
     <AppShell>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
+      <section className="relative overflow-hidden bg-gradient-hero text-foreground">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute -left-32 top-10 h-96 w-96 rounded-full bg-primary-glow blur-3xl" />
           <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-primary blur-3xl" />
@@ -73,20 +73,20 @@ function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
-              <Badge className="bg-primary-foreground/15 text-primary-foreground backdrop-blur">
+              <Badge className="bg-foreground/15 text-foreground backdrop-blur">
                 <Sparkles className="mr-1 h-3 w-3" /> Mahindra University · Live now
               </Badge>
               <h1 className="mt-4 text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
                 The campus auction floor — bid in <span className="text-primary-glow">Unicoins</span>.
               </h1>
-              <p className="mt-5 max-w-lg text-lg text-primary-foreground/80">
+              <p className="mt-5 max-w-lg text-lg text-foreground/80">
                 Buy textbooks, tech, and dorm gear from fellow students. Set your own auctions in
                 seconds.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button
                   size="lg"
-                  className="bg-primary-foreground text-foreground hover:bg-primary-foreground/90"
+                  className="bg-primary-foreground text-foreground hover:bg-primary-foreground/80"
                   onClick={() => {
                     document.getElementById("browse")?.scrollIntoView({ behavior: "smooth" });
                   }}
@@ -96,13 +96,13 @@ function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+                  className="border-foreground/30 bg-transparent text-foreground hover:bg-primary-foreground/10"
                   onClick={() => navigate({ to: "/sell" })}
                 >
                   Sell an item <ArrowRight className="h-4 w-4" />
                 </Button>
               </div>
-              <div className="mt-10 grid grid-cols-3 gap-6 border-t border-primary-foreground/15 pt-6">
+              <div className="mt-10 grid grid-cols-3 gap-6 border-t border-foreground/15 pt-6">
                 <Stat n={stats.activeCount} label="Active auctions" />
                 <Stat n={stats.bidsCount} label="Bids placed" />
                 <Stat n={stats.sellers} label="Sellers" />
@@ -127,7 +127,7 @@ function HomePage() {
                     />
                     <div className="min-w-0 flex-1">
                       <div className="truncate text-sm font-medium">{a.title}</div>
-                      <div className="text-xs text-primary-foreground/70">
+                      <div className="text-xs text-foreground/70">
                         {a.bidCount} bids · {a.currentBid} Unicoins
                       </div>
                     </div>
@@ -232,7 +232,7 @@ function Stat({ n, label }: { n: number; label: string }) {
   return (
     <div>
       <div className="text-3xl font-bold">{n.toLocaleString()}</div>
-      <div className="mt-1 text-xs uppercase tracking-wider text-primary-foreground/70">{label}</div>
+      <div className="mt-1 text-xs uppercase tracking-wider text-foreground/70">{label}</div>
     </div>
   );
 }

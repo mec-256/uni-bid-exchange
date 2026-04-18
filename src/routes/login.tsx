@@ -54,7 +54,7 @@ function LoginPage() {
           <div className="absolute -left-20 top-20 h-72 w-72 rounded-full bg-primary-glow blur-3xl" />
           <div className="absolute bottom-20 right-10 h-80 w-80 rounded-full bg-primary blur-3xl" />
         </div>
-        <div className="relative flex h-full flex-col justify-between p-12 text-primary-foreground">
+        <div className="relative flex h-full flex-col justify-between p-12 text-foreground">
           <Link to="/" className="flex items-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-foreground/15 backdrop-blur">
               <Gavel className="h-5 w-5" />
@@ -65,7 +65,7 @@ function LoginPage() {
             <h1 className="text-5xl font-bold leading-tight tracking-tight">
               The campus auction floor.
             </h1>
-            <p className="mt-4 max-w-md text-lg text-primary-foreground/80">
+            <p className="mt-4 max-w-md text-lg text-foreground/80">
               Bid in Unicoins on textbooks, tech, dorm gear and more — straight from your fellow
               students.
             </p>
